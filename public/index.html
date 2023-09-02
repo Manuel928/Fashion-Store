@@ -37,7 +37,7 @@
         </div>
         <a href="#explore"><button class="btn">Shop now</button></a>
         <a href="#explore">
-            <p class="scroll text-2xl text-white animate-bounce">Scroll down</p>
+            <p class="scroll footer-items animate-bounce">Scroll down</p>
             <svg class="down-svg" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                 <path stroke="var(--tds-icon--fill, #171a20)" stroke-width="1.5" d="m19.5 12.5-4.5 4-4.5-4" fill="none"
                     stroke-linecap="round" stroke-linejoin="round" />
@@ -45,24 +45,9 @@
         </a>
     </section>
 
-    <!-- What we are section -->
-    <section id="what-we-are" class="bg-[#414d13] mt-[50px] mx-1">
-        <div class="what-we-are-container">
-            <img src="./images/jackson-david-PdniSFPlBdQ-unsplash.jpg" alt="" class="what-we-are-image" srcset="">
-            <div class="items-center px-10 lg:pt-[25%]">
-                <h2 class="about-text">What we are</h2>
-                <p class="about-text-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                    voluptatibus molestias nostrum
-                    quibusdam. Repellendus deserunt nihil eveniet perferendis recusandae fugit, repudiandae eum eaque.
-                    Laudantium distinctio accusamus voluptatibus eligendi, nobis quisquam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro aut officia eos obcaecati iste, soluta veritatis ea quae eaque sed?</p>
-            </div>
-        </div>
-    </section>
-    <!-- End of what we are -->
-
     <!-- Explore -->
     <section class="explore" id="explore">
-        <h2 class="explore-text">Explore <span class="text-[#414d13]">Our Collections</span></h2>
+        <h2 class="explore-text">Featured <span class="text-[#414d13]">Collections</span></h2>
         <!-- <div class="flex flex-row justify-center">
             <div class="border-solid border-black"></div>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -109,10 +94,28 @@
     </section>
     <!-- Explore end -->
 
+
+    <!-- What we are section -->
+    <section id="what-we-are" class="bg-[#414d13] mt-[50px] mx-1">
+        <div class="what-we-are-container">
+            <img src="./images/jackson-david-PdniSFPlBdQ-unsplash.jpg" alt="" class="what-we-are-image" srcset="">
+            <div class="items-center px-10 lg:pt-[25%]">
+                <h2 class="about-text">Who we are</h2>
+                <p class="about-text-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                    voluptatibus molestias nostrum
+                    quibusdam. Repellendus deserunt nihil eveniet perferendis recusandae fugit, repudiandae eum eaque.
+                    Laudantium distinctio accusamus voluptatibus eligendi, nobis quisquam Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Porro aut officia eos obcaecati iste, soluta veritatis ea quae eaque
+                    sed?</p>
+            </div>
+        </div>
+    </section>
+    <!-- End of what we are -->
+
     <!-- What Customers say -->
     <section id="testimonial" class="testimonial">
         <h2 class="explore-text">What <span class="text-[#414d13]">Our Customers Say</span></h2>
-        <div class="swiper testimonial-swiper">
+        <div class="swiper testimonialSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="testimonial-details">
@@ -315,13 +318,70 @@
                             </svg>
                         </div>
                         <p class="testimonial-words">Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Nisi laborum perferendis placeat consequatur, ratione autem!</p>
+                            elit. emma Nisi laborum perferendis placeat consequatur, ratione autem!</p>
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination" id="swiper-pagination"></div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <div class="flex flex-col justify-start">
+        <section class="footer">
+            <div class="flex flex-col">
+                <a href="">
+                    <p class="footer-items">Contact Us</p>
+                </a>
+                <a href="">
+                    <p class="footer-items">About Us</p>
+                </a>
+                <a href="">
+                    <p class="footer-items">Shipping & Returns</p>
+                </a>
+                <!-- <a href=""><p class="footer-items">Contact Us</p></a> -->
+            </div>
+            <div class="flex flex-col">
+                <a href="">
+                    <p class="footer-items">Privacy Policy</p>
+                </a>
+                <a href="">
+                    <p class="footer-items">Terms & Conditions</p>
+                </a>
+                <a href="">
+                    <p class="footer-items">FAQs</p>
+                </a>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-2xl text-white text-center">Follow Us</p>
+                <div class="flex flex-row justify-center mt-[15px] mb-[15px]">
+                    <a href="https://www.facebook.com/yourpage" class="px-3" target="_blank"><img
+                            src="./images/icons8-facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/yourpage" class="px-3" target="_blank"><img
+                            src="./images/icons8-instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.twitter.com/yourpage" class="px-3" target="_blank"><img
+                            src="./images/icons8-twitter.svg" alt="Twitter"></a>
+                    <!-- <a href="https://www.gmail.com/yourpage" class="px-3" target="_blank"><img src="./images/icons8-gmail.svg"
+                        alt="Instagram"></a> -->
+                    <!-- Add more social media icons and links as needed -->
+                </div>
+                <h3 class="text-4xl text-white">Subscribe to our newsletter</h3>
+                <form action="">
+                    <div>
+                        <label for="newsletter" class="block mb-2 font-medium text-white"></label>
+                        <input type="text" id="newsletter"
+                            class="bg-[#414d13] border border-white outline-white text-white text-2xl rounded-lg focus:ring-[#414d13] focus:border-[#414d13] block w-[70%] lg:w-full ml-auto mr-auto p-2.5"
+                            placeholder="Enter your email" required>
+                    </div>
+                    <button type="submit"
+                        class="text-[#414d13] bg-white my-4 hover:bg-[#e3f3a1] focus:ring-4 focus:outline-none focus:ring-green-200 font-medium rounded-lg text-2xl sm:w-auto px-5 py-2.5 text-center">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        <!-- <div class="border border-gray-300 my-[10px]"></div> -->
+        <p class="text-center bg-[#414d13] text-2xl text-white pb-6">Copyright &copy 2023. All rights reserved | Made with ❤
+            by Manuelonics</p>
+    </div>
     <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>

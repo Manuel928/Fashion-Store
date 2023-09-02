@@ -70,10 +70,16 @@ html {
     @apply w-[50%] hidden lg:inline-flex;
 }
 .about-text {
-    @apply text-4xl md:text-5xl sm:text-5xl lg:text-7xl text-white text-center p-5 pb-2;
+    @apply text-4xl font-bold md:text-5xl sm:text-5xl lg:text-7xl text-white text-center p-5 pb-2;
 }
 .about-text-2 {
-    @apply text-white text-2xl sm:text-2xl sm:font-thin md:text-2xl lg:text-3xl pb-10;
+    @apply text-white text-2xl sm:text-2xl font-thin md:text-2xl lg:text-3xl pb-10;
+}
+.footer {
+    @apply bg-[#414d13] block text-center lg:flex flex-row justify-around py-[3.2rem];
+}
+.footer-items {
+    @apply text-2xl text-white leading-[40px]
 }
 /* .grid-section {
     @apply pt-[2.25rem] relative
@@ -114,6 +120,6 @@ html {
 .swiper {
     @apply sm:w-[600px] sm:h-[300px] lg:w-full lg:h-[300px]
 }
-.testimonial-swiper {
+.testimonialSwiper {
     @apply lg:w-[60%] ml-auto mr-auto;
 }

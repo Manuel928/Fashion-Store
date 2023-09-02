@@ -3,29 +3,30 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     speed: 2000,
     autoplay: {
-        enabled:true,
-        delay: 1
+        enabled: true,
+        delay: 1, // Adjust the delay as needed
+        disableOnInteraction: false,
     },
+    lazy: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-    effects: "cards",
-    grabCursor: true,
-})
+});
 
-const swiper2 = new Swiper('.testimonial-swiper', {
+const testimonialSwiper = new Swiper('.testimonialSwiper', {
     direction: 'horizontal',
-    speed: 3000,
-    autoplay: {
-        enabled:true,
-        delay: 1
-    },
     loop: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+    speed: 3000,
+    lazy: true,
+    autoplay: {
+        enabled: true,
+        delay: 1, // Adjust the delay as needed
+        disableOnInteraction: false,
     },
-    effects: "cards",
-    grabCursor: true,
-})
+    pagination: {
+        el: null,
+        clickable: true,
+        hide: true
+    },
+});
