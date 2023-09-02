@@ -418,9 +418,16 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.mx-1{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
 .my-2{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+.mt-\[50px\]{
+  margin-top: 50px;
 }
 .flex{
   display: flex;
@@ -478,11 +485,19 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
+.bg-\[\#414d13\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(65 77 19 / var(--tw-bg-opacity));
+}
 .bg-transparent{
   background-color: transparent;
 }
 .fill-current{
   fill: currentColor;
+}
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .text-center{
   text-align: center;
@@ -589,7 +604,7 @@ html {
 
 @media (min-width: 768px){
   .brand-text{
-    top: 35%;
+    top: 45%;
     left: 5%;
     font-size: 40px;
   }
@@ -597,6 +612,7 @@ html {
 
 @media (min-width: 1024px){
   .brand-text{
+    top: 40%;
     font-size: 70px;
     line-height: 8.5rem;
   }
@@ -612,17 +628,17 @@ html {
 }
 
 .btn{
+  position: absolute;
+  top: 50%;
+  left: 5%;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   height: 4rem;
-  width: 25.5rem;
   border-radius: 3.2rem;
   --tw-bg-opacity: 1;
   background-color: rgb(65 77 19 / var(--tw-bg-opacity));
   padding-left: 2.4rem;
   padding-right: 2.4rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
@@ -637,36 +653,32 @@ html {
   --tw-bg-opacity: 0.9;
 }
 
+@media (min-width: 640px){
+  .btn{
+    top: 65.5%;
+    width: 17.5rem;
+  }
+}
+
 @media (min-width: 768px){
   .btn{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-}
-
-.shop-buttons{
-  position: absolute;
-  top: 50%;
-  left: 5%;
-}
-
-@media (min-width: 640px){
-  .shop-buttons{
-    top: 62.5%;
-  }
-}
-
-@media (min-width: 768px){
-  .shop-buttons{
-    top: 53%;
+    top: 65.5%;
+    width: 20.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
 @media (min-width: 1024px){
-  .shop-buttons{
-    top: 60%;
+  .btn{
+    top: 69%;
+    width: 25.5rem;
   }
 }
+
+/* .shop-buttons {
+    @apply ;
+} */
 
 .down-svg{
   position: absolute;
@@ -724,7 +736,7 @@ html {
 
 @media (min-width: 768px){
   .scroll{
-    left: 45.5%;
+    left: 46%;
   }
 }
 
@@ -737,11 +749,32 @@ html {
 .explore-text{
   margin-bottom: 20px;
   text-align: center;
-  font-size: 4.5rem;
-  line-height: 1;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px){
+  .explore-text{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 768px){
+  .explore-text{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .explore-text{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }
 
 .explore,
@@ -750,7 +783,7 @@ html {
 }
 
 .image-container{
-  height: 20%;
+  height: 100%;
   width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -763,100 +796,95 @@ html {
 .image-container:last-child{
   padding-right: 0.5rem;
 }
-
-.grid-section{
-  position: relative;
-  padding-top: 2.25rem;
+.what-we-are-container{
+  display: flex;
+  justify-content: space-between;
 }
-
-.buy-btn{
-  border-radius: 0.75rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(65 77 19 / var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.what-we-are-image{
+  display: none;
+  width: 50%;
+}
+@media (min-width: 1024px){
+  .what-we-are-image{
+    display: inline-flex;
+  }
+}
+.about-text{
+  padding: 1.25rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
-.buy-btn:hover{
-  --tw-bg-opacity: 0.1;
-}
-
-.buy-btn-1{
-  position: absolute;
-}
-
 @media (min-width: 640px){
-  .buy-btn-1{
-    top: 80%;
-    left: 9%;
+  .about-text{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
-
-@media (min-width: 1024px){
-  .buy-btn-1{
-    top: 80%;
-    left: 12.5%;
-  }
-}
-
-.buy-btn-2{
-  position: absolute;
-}
-
-@media (min-width: 640px){
-  .buy-btn-2{
-    top: 70%;
-    left: 44.5%;
-  }
-}
-
-@media (min-width: 1024px){
-  .buy-btn-2{
-    top: 70%;
-    left: 47.5%;
-  }
-}
-
-.buy-btn-3{
-  position: absolute;
-}
-
-@media (min-width: 640px){
-  .buy-btn-3{
-    top: 80%;
-    left: 75.5%;
-  }
-}
-
-@media (min-width: 1024px){
-  .buy-btn-3{
-    top: 85%;
-    left: 80.5%;
-  }
-}
-
-.testimonial-container{
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 80%;
-}
-
 @media (min-width: 768px){
-  .testimonial-container{
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .about-text{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
+@media (min-width: 1024px){
+  .about-text{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+.about-text-2{
+  padding-bottom: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+@media (min-width: 640px){
+  .about-text-2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 100;
+  }
+}
+@media (min-width: 768px){
+  .about-text-2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 1024px){
+  .about-text-2{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+/* .grid-section {
+    @apply pt-[2.25rem] relative
+} */
+
+/* .buy-btn {
+    @apply text-3xl bg-[#414d13] text-white px-4 py-3 rounded-xl hover:bg-opacity-10;
+}
+
+.buy-btn-1 {
+    @apply absolute sm:top-[80%] sm:left-[9%] lg:top-[80%] lg:left-[12.5%]
+}
+
+.buy-btn-2 {
+    @apply absolute sm:top-[70%] sm:left-[44.5%] lg:top-[70%] lg:left-[47.5%]
+}
+
+.buy-btn-3 {
+    @apply absolute sm:top-[80%] sm:left-[75.5%] lg:top-[85%] lg:left-[80.5%]
+} */
+
+/* .testimonial-container {
+    @apply block w-[80%] ml-auto mr-auto md:grid md:grid-cols-3 md:w-[100%] md:ml-auto md:mr-auto
+} */
 
 .testimonial-details{
   margin-top: 2.5rem;
@@ -930,8 +958,31 @@ html {
   border-radius: 50%;
 }
 
+@media (min-width: 640px){
+  .swiper{
+    height: 300px;
+    width: 600px;
+  }
+}
+
 @media (min-width: 1024px){
+  .swiper{
+    height: 300px;
+    width: 100%;
+  }
+}
+.testimonial-swiper{
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1024px){
+  .testimonial-swiper{
+    width: 60%;
+  }
   .lg\:inline-block{
     display: inline-block;
+  }
+  .lg\:pt-\[25\%\]{
+    padding-top: 25%;
   }
 }

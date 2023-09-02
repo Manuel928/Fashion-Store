@@ -26,7 +26,7 @@ html {
 }
 
 .brand-text {
-    @apply font-medium text-gray-50 lg:leading-[8.5rem] uppercase sm:text-[40px] md:text-[40px] lg:text-[70px] text-[30px] absolute top-[35%] left-[5%] sm:top-[45%] sm:left-[5%] md:top-[35%] md:left-[5%] text-center;
+    @apply font-medium text-gray-50 lg:leading-[8.5rem] uppercase sm:text-[40px] md:text-[40px] lg:text-[70px] text-[30px] absolute top-[35%] left-[5%] sm:top-[45%] lg:top-[40%] sm:left-[5%] md:top-[45%] md:left-[5%] text-center;
     font-family: "Jost", sans-serif;
     text-align: start;
 }
@@ -36,23 +36,23 @@ html {
 }
 
 .btn {
-    @apply text-white text-2xl md:text-3xl px-[2.4rem] py-[0.4rem] bg-[#414d13] font-medium h-16 w-[25.5rem] my-2 rounded-[3.2rem] hover:bg-opacity-90 transition-all duration-300
+    @apply text-white absolute top-[50%] sm:top-[65.5%] md:top-[65.5%] lg:top-[69%] left-[5%] text-2xl md:text-2xl px-[2.4rem] bg-[#414d13] font-medium h-16 sm:w-[17.5rem] md:w-[20.5rem] lg:w-[25.5rem] my-2 rounded-[3.2rem] hover:bg-opacity-90 transition-all duration-300
 }
 
-.shop-buttons {
-    @apply absolute top-[50%] sm:top-[62.5%] md:top-[53%] lg:top-[60%] left-[5%]
-}
+/* .shop-buttons {
+    @apply ;
+} */
 
 .down-svg {
     @apply block pt-0 mt-0 w-full fill-current text-white h-20 mx-auto absolute top-[93%] animate-bounce;
 }
 
 .scroll {
-    @apply block mx-auto absolute top-[90%] left-[44%] md:left-[45.5%] lg:left-[47.7%] animate-bounce;
+    @apply block mx-auto absolute top-[90%] left-[44%] md:left-[46%] lg:left-[47.7%] animate-bounce;
 }
 
 .explore-text {
-    @apply text-center text-gray-800 font-medium mb-[20px] text-7xl
+    @apply text-center text-gray-800 font-medium mb-[20px] text-4xl md:text-4xl sm:text-4xl lg:text-7xl;
 }
 
 .explore,
@@ -61,14 +61,25 @@ html {
 }
 
 .image-container {
-    @apply h-[20%] w-full first:pl-2 last:pr-2 px-2
+    @apply h-full w-full first:pl-2 last:pr-2 px-2
 }
-
-.grid-section {
+.what-we-are-container {
+    @apply flex justify-between;
+}
+.what-we-are-image {
+    @apply w-[50%] hidden lg:inline-flex;
+}
+.about-text {
+    @apply text-4xl md:text-5xl sm:text-5xl lg:text-7xl text-white text-center p-5 pb-2;
+}
+.about-text-2 {
+    @apply text-white text-2xl sm:text-2xl sm:font-thin md:text-2xl lg:text-3xl pb-10;
+}
+/* .grid-section {
     @apply pt-[2.25rem] relative
-}
+} */
 
-.buy-btn {
+/* .buy-btn {
     @apply text-3xl bg-[#414d13] text-white px-4 py-3 rounded-xl hover:bg-opacity-10;
 }
 
@@ -82,11 +93,11 @@ html {
 
 .buy-btn-3 {
     @apply absolute sm:top-[80%] sm:left-[75.5%] lg:top-[85%] lg:left-[80.5%]
-}
+} */
 
-.testimonial-container {
+/* .testimonial-container {
     @apply block w-[80%] ml-auto mr-auto md:grid md:grid-cols-3 md:w-[100%] md:ml-auto md:mr-auto
-}
+} */
 
 .testimonial-details {
     @apply flex flex-col even:bg-[#414d13] even:text-white odd:bg-white last:border-l-0 last:border-r-4 border-r-[#414d13] justify-between shadow-md border-l-4 border-l-[#414d13] rounded-lg items-center lg:mx-[2rem] md:mx-[2rem] my-[2.5rem] mx-[2.5rem] px-[2.5rem] ml-auto mr-auto;
@@ -98,4 +109,11 @@ html {
 
 .testimonial-image {
     @apply w-36 h-36 rounded-[50%] my-2
+}
+
+.swiper {
+    @apply sm:w-[600px] sm:h-[300px] lg:w-full lg:h-[300px]
+}
+.testimonial-swiper {
+    @apply lg:w-[60%] ml-auto mr-auto;
 }
