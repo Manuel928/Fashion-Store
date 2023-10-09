@@ -5,16 +5,25 @@ const closeModal = document.getElementById('close');
 
 menuToggle.addEventListener('click', () => {
     modal.style.display = 'block';
+    setTimeout(() => {
+        modal.classList.add('active')
+    }, 10);
 });
 
 closeModal.addEventListener('click', () => {
-    modal.style.display = 'none';
+    modal.classList.remove('active')
+    setTimeout(() => {
+        modal.style.display = 'none'
+    }, 500);
 });
 
 // Close the modal when the user clicks outside of it
 window.addEventListener('click', (event) => {
     if (event.target === modal) {
-        modal.style.display = 'none';
+        modal.classList.remove('active')
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 500);
     }
 });
 

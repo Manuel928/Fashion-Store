@@ -69,6 +69,13 @@ nav {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+.modal.active {
+    opacity: 1;;
+    pointer-events: auto;
 }
 
 .modal-content {
