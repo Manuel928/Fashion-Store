@@ -18,17 +18,44 @@
         <img src="./images/n.svg" class="h-6 bg-transparent flex justify-end" alt="Brand Logo" srcset="">
         <!-- Nav Links -->
         <div class="">
-            <a href="#" class="nav-link hidden lg:inline-block">Women's Native Wear</a>
-            <a href="#" class="nav-link hidden lg:inline-block">Casual Wears</a>
-            <a href="#" class="nav-link hidden lg:inline-block">Turbans & Scarfs</a>
-            <a href="#" class="nav-link hidden lg:inline-block">Aso Ebi</a>
+            <a href="#" class="header-link hidden lg:inline-block">Women's Native Wear</a>
+            <a href="#" class="header-link hidden lg:inline-block">Casual Wears</a>
+            <a href="#" class="header-link hidden lg:inline-block">Turbans & Scarfs</a>
+            <a href="#" class="header-link hidden lg:inline-block">Aso Ebi</a>
         </div>
         <!-- Other Links -->
-        <div>
-            <a href="#explore" class="nav-link hidden lg:inline-block">Explore</a>
-            <a href="#shop" class="nav-link">Shop</a>
-            <a href="#contact" class="nav-link">Contact Us</a>
-        </div>
+        <nav>
+            <div class="menu-toggle" id="menuToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-items">
+                <ul class="links">
+                    <li><a href="#explore" class="nav-link">Explore</a></li>
+                    <li><a href="#shop" class="nav-link">Shop</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Add this inside the <body> tag -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close">&times;</span>
+                    <ul class="modal-links">
+                        <li><a href="#explore" class="nav-link">Explore</a></li>
+                        <li><a href="#shop" class="nav-link">Shop</a></li>
+                        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                    </ul>
+                    <hr class="border border-t-1 m-4">
+                    <ul class="modal-links">
+                        <li><a href="#" class="header-link nav-link">Women's Native Wear</a></li>
+                        <li><a href="#" class="header-link nav-link">Casual Wears</a></li>
+                        <li><a href="#" class="header-link nav-link">Turbans & Scarfs</a></li>
+                        <li><a href="#" class="header-link nav-link">Aso Ebi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <section id="brand" class="brand">
         <img src="./images/jackson-david-JXuNh9jAaEw-unsplash.jpg" alt="" class="brand-woman">
@@ -379,9 +406,11 @@
             </div>
         </section>
         <!-- <div class="border border-gray-300 my-[10px]"></div> -->
-        <p class="text-center bg-[#414d13] text-2xl text-white pb-6">Copyright &copy 2023. All rights reserved | Made with ❤
+        <p class="text-center bg-[#414d13] text-2xl text-white pb-6">Copyright &copy 2023. All rights reserved | Made
+            with ❤
             by Manuelonics</p>
     </div>
+    <button class="go-up">Go up</button>
     <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
